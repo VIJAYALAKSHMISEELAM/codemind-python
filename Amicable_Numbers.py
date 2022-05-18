@@ -4,14 +4,14 @@ def is_it_ambient(m,n):
         if m%i==0:
             sum=sum+i
     if sum==n:
-        return  True
+        return True
     else:
         return False
 m=int(input())
 n=int(input())
 if(is_it_ambient(m,n)):
     m,n=n,m
-    if (is_it_ambient(m,n)):
+    if(is_it_ambient(m,n)):
         print('Amicable')
     else:
         print('Not Amicable')
