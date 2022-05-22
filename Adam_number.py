@@ -11,12 +11,7 @@ while(b!=0):
     d=b%10
     c=(c*10)+d
     b=b//10
-if(a==c):   #asalu num ni square chesaka vachina number should be equal to
-#reverse of b-->b is rev of a square
-#note:vice versa will give hidden test cases fail
+if(a==c):
     print('True')
 else:
     print('False')
-
-    
-    
