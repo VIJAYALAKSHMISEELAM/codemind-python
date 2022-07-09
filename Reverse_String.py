@@ -1,3 +1,5 @@
-n=input()
-b=n[::-1]
-print(b)
+s=input()
+v=list(s.split())
+x=len(v)
+for i in range(x-1,-1,-1):
+    print(v[i],end=" ")
