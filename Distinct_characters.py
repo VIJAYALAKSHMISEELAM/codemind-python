@@ -1,17 +1,17 @@
 s=input()
 x=len(s)
-c=v=iso=0
+c=v=z=w=0
 b=[]
 for i in range(x):
-    c=0
-    if(s[i]!=" "): 
-        for j in range(x):
-            if i!=j:
-                if s[i]==s[j] or s[i].upper()==s[j] or s[i].lower()==s[j]:
-                    c+=1
-        if(c==0): 
-            b.append(s[i])
+    c=0 
+    if s[i]==" ": 
+        continue 
+    else: 
+        if s[i].upper() not in b and s[i].lower() not in b: 
+            if(s[i].islower()):
+                
+                b.append(s[i])
+        
 b.sort()
-            
-for i in range(len(b)):
-    print(b[i],end="")
+for i in b:
+    print(i,end='')
