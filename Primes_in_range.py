@@ -1,15 +1,15 @@
-def isprime(a):
-    if a<2:
-        return False
-    b=int(a**0.5)
-    for d in range(2,b+1):
-        if a%d==0:
+def is_it_prime(i):
+    
+    for j in range(2,int(i**0.5)+1):
+        if(i%j==0):
             return False
     return True
 a=int(input())
 b=int(input())
-count=0
+c=0
 for i in range(a,b+1):
-    if isprime(i):
-        count+=1
-print(count)
+    if(i==1):
+        continue
+    elif(is_it_prime(i)):
+        c+=1
+print(c)
