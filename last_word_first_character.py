@@ -1,3 +1,5 @@
 a=input()
-arr=list(a.split())
-print(arr[len(arr)-1][0])
+k=a.split()
+for i in k[-1]:
+    print(i[0])
+    break
